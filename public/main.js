@@ -1,7 +1,3 @@
-// drag and drop
-
-// remove elements from DOM
-
 document.addEventListener('DOMContentLoaded', () => {
     const containers = document.querySelectorAll('.wrapper');
     const containerParent = document.querySelector('main');

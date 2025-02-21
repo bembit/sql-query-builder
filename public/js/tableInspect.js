@@ -1,8 +1,3 @@
-// small right sidebar for quick table details to build queries from
-// @populateTableSelect() function to populate the table select dropdown
-// @displayTableDetails() function to display table details
-// @sampleData() function to display sample data limited to 5 rows
-
 function populateTableSelect() {
     // Fetch the schema information from the backend
     fetch('/api/schema')

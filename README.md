@@ -1,71 +1,22 @@
-### TEST; SQL Query Builder / table analyser in Node.js / vanilla
+### SQL Developer veryLite.
 
-### The main idea would be to connect it to any sql database and do stuff.
+Built to practice SQL, ended up practicing JavaScript instead.
 
-- definitely sounded easier in concept than it actually is while building it.
-- good for a demo, or a tool to help people learn sql. would rewrite in typescript / react or something.
-- has some python scripts to create a database and populate it with data.
+1. Has decent UI and saved queries history.
+2. Shows tables and columns.
+3. Saves states to localstorage.
+4. Can export query results and saved queries to CSV.
+5. Python scripts to create a database and populate it with data. Dummy data in `/database/`
+6. Branches:
+    - Clientside with dummy json.
+    - `flask: Postgre` version of the SQL query builder.
+    - `nodejs: PostgreSQL` version of the SQL query builder 
+    - `nodejs: SQLite` version of the SQL query builder 
+7. Probably has bugs, and an unfinished converter features theory in public/js/whatever.js.
+8. Small backend with basic `routing / models and controllers.`
 
-### todo
+<br>
 
-A validation would be great so we couldn't spam empty SELECT * queries.
+[Client side v. demo](https://veryseriousbusiness.xyz/heroez/sql-query-builder/)
 
-- [ ] add order by default _id ?
-
-- [x] added lots of UI shit as usual
-
-- [ ] import should validate IDs, and ignore if they are already in localstorage
-
-- [ ] rewrite everything localstorage based to sqlite, or just have the possibility
-
-- [x] resolve initial selected table not showing columns
-
-- [x] added user options and confirmation dialog
-
-- [x] add an interface, maybe tabbed, or nav bar
-
-- [ ] queries dropdown for last 15 entries
-
-- [x] add DISTINCT toggle
-
-- [x] add COUNT(*) toggle
-
-- [x] can add limit
-
-- [x] add option to select columns from joined tables ...
-
-- [ ] on modal close, set searchbar to empty? or don't?
-
-- [ ] copy to clipboard button for query.
-
-- [x] export to csv button functions 
-
-- [x] expand on table analyser, more details, first few rows, etc
-
-- [ ] clean up messy code and refactor, structure, and comments
-
-- [x] need import comments too
-
-- [x] EDIT COMMENTS
-
-- [x] ok, add DBs now.
-
-- [x] then do editor.
-
-- [x] add a count to the end results
-
-- [ ] double click to edit is shit
-
-- [ ] write some gpt queries to test joins
-
-- [ ] add a button to clear the query builder
-
-- [ ] make query editable and copyable...
-
-- [x] start the db editor, migrator
-
-- [x] expand joins to dropdown multi joins.
-
-### failed / discarded for demo
-
-- [ ] save the entire query state to local storage so we can load them later as an editable form
+<img src="./landing.png" width="100%">

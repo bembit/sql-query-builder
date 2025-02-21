@@ -13,7 +13,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api', routes);
 
-// app.use('/sample-data', sampleRoutes);
 app.get('/db-editor', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/db-editor.html'));
 });
